@@ -77,7 +77,7 @@ client.on("message", async message => {
     }
     if(command === "version") {
   
-    return message.channel.send("BoggyBot Version 1.1.1");
+    return message.channel.send("BoggyBot Version 1.0");
     
   }
   if(message.content.indexOf(config.prefix) !== 0) return;
