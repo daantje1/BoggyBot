@@ -120,16 +120,17 @@ client.on("message", async message => {
       return message.channel.send("Please check if you have the @Staff permission!");
     const helpEmbed = new Discord.RichEmbed()
             .setColor("RANDOM")
+			.setThumbnail(`http://ih1.redbubble.net/image.15391484.7669/fc,550x550,white.u1.jpg`)
     	    .setTitle(`BoggyBot Help Menu`)
-            .addField(`**!idea [idea]** Creates an RichEmbed in #votes`)
-            .addField(`**!meme** for if you want to have a break`)
-            .addField(`**!donate** Help this bot and my server!`)
-            .addField(`**!help** Shows this`)
-            .addField(`**!kick [player] [reason]** Kicks A Player`)
-            .addField(`**!ban [player] [reason]** bans a player`)
-            .addField(`**!giveaway [winners] [time in minutes]** allows you to start a giveaway`)
-            .addField(`**!clear** Clears Chat`)
-            .addField(`**!say [message]** Say something as the bot`);
+            .addField(`**+idea [idea]** Creates an RichEmbed in #votes`)
+            .addField(`**+meme** for if you want to have a break`)
+            .addField(`**+donate** Help this bot and my server!`)
+            .addField(`**+help** Shows this`)
+            .addField(`**+kick [player] [reason]** Kicks A Player`)
+            .addField(`**+ban [player] [reason]** bans a player`)
+            .addField(`**+giveaway [winners] [time in minutes]** allows you to start a giveaway`)
+            .addField(`**+clear** Clears Chat`)
+            .addField(`**+say [message]** Say something as the bot`);
             
             
         message.channel.send(helpEmbed);
