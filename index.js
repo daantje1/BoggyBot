@@ -122,9 +122,12 @@ client.on("message", async message => {
             .setColor("RANDOM")
 			.setThumbnail(`http://ih1.redbubble.net/image.15391484.7669/fc,550x550,white.u1.jpg`)
     	    .setTitle(`BoggyBot Help Menu`)
-            .addField(`**+idea [idea]** Creates an RichEmbed in #votes`)
+
+           .addField(`**+setup** Creates a Staff role (ASSIGN STAFF ROLE! ELSE YOU CANT USE ANY COMMANDS!`)
+
+            .addField(`**+idea [idea]** Creates an message in #votes`)
             .addField(`**+meme** for if you want to have a break`)
-            .addField(`**+donate** Help this bot and my server!`)
+            .addField(`**+premium** Coming soon`)
             .addField(`**+help** Shows this`)
             .addField(`**+kick [player] [reason]** Kicks A Player`)
             .addField(`**+ban [player] [reason]** bans a player`)
@@ -136,9 +139,9 @@ client.on("message", async message => {
         message.channel.send(helpEmbed);
   }
   
-  if (command === "donate") {
+  if (command === "premium") {
     
-  return message.channel.send("You can help us make this bot better here: https://patreon.com/discordsocialclub");
+  return message.channel.send("Coming Soon");
   
   }
    if (command === "meme") {
