@@ -34,13 +34,13 @@ sleep(1000 * 1).then(() => console.log("Done!"))
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-   client.user.setActivity(`${client.guilds.size} servers`);
+   client.user.setActivity(`In ${client.guilds.size} servers`);
 });
 
 client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-   client.user.setActivity(`${client.guilds.size} servers`);
+   client.user.setActivity(`In ${client.guilds.size} servers`);
 });
 
 
@@ -77,7 +77,7 @@ client.on("message", async message => {
     }
     if(command === "version") {
   
-    return message.channel.send("Bot Version 1.1.0");
+    return message.channel.send("BoggyBot Version 1.1.0");
     
   }
   if(message.content.indexOf(config.prefix) !== 0) return;
@@ -118,7 +118,7 @@ client.on("message", async message => {
       return message.channel.send("Please check if you have the @Staff permission!");
     const helpEmbed = new Discord.RichEmbed()
             .setColor("RANDOM")
-            .setTitle(`JustMod Help`)
+            .setTitle(`BoggyBot Help Menu`)
             .addField(`**!idea [idea]** Creates an RichEmbed in #votes`)
             .addField(`**!meme** for if you want to have a break`)
             .addField(`**!donate** Help this bot and my server!`)
@@ -135,7 +135,7 @@ client.on("message", async message => {
   
   if (command === "donate") {
     
-  return message.channel.send("You can become a patreon here: https://patreon.com/discordsocialclub");
+  return message.channel.send("You can help us make this bot better here: https://patreon.com/discordsocialclub");
   
   }
    if (command === "meme") {
@@ -160,7 +160,7 @@ client.on("message", async message => {
   if(command === "ping") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
-    const m = await message.channel.send("One Moment...");
+    const m = await message.channel.send("Ping");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
   
