@@ -128,7 +128,7 @@ client.on("message", async message => {
             .addField(`**+help** Shows this`)
             .addField(`**+kick [player] [reason]** Kicks A Player`)
             .addField(`**+ban [player] [reason]** bans a player`)
-            .addField(`**+giveaway [winners] [time in minutes]** allows you to start a giveaway`)
+            .addField(`**+giveaway [winners] [time in minutes] [prize]** allows you to start a giveaway`)
             .addField(`**+clear** Clears Chat`)
             .addField(`**+say [message]** Say something as the bot`);
             
