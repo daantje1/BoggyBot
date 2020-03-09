@@ -27,20 +27,25 @@ client.on("ready", () => {
 )
 }
 console.log("Setting Activity...")
-sleep(1000 * 1).then(() => console.log("Done!"))
- client.user.setActivity(`${client.guilds.size} servers`);
+client.user.setActivity(`Starting up...`);
+sleep(10000 * 1).then(() => console.log("Done!"))
+ 
+ client.user.setActivity('${client.guilds.size} servers', { type: 'WATCHING' });
+
 });
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-   client.user.setActivity(`In ${client.guilds.size} servers`);
+    client.user.setActivity('${client.guilds.size} servers', { type: 'WATCHING' });
+
 });
 
 client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-   client.user.setActivity(`In ${client.guilds.size} servers`);
+    client.user.setActivity('${client.guilds.size} servers', { type: 'WATCHING' });
+
 });
 
 
