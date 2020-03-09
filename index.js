@@ -123,7 +123,6 @@ client.on("message", async message => {
       return message.channel.send("Please check if you have the @Staff permission!");
     const helpEmbed = new Discord.RichEmbed()
             .setColor("RANDOM")
-			.setThumbnail(`http://ih1.redbubble.net/image.15391484.7669/fc,550x550,white.u1.jpg`)
     	    .setTitle(`BoggyBot Help Menu`)
             .addField(`**!idea [idea]** Creates an RichEmbed in #votes`)
             .addField(`**!meme** for if you want to have a break`)
