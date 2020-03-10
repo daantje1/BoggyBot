@@ -1,2 +1,2 @@
 worker node index.js
-betaworker cd beta && node index.js
+zbetaworker cd beta && node index.js
