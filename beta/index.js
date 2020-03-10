@@ -30,19 +30,19 @@ console.log("Setting Activity...")
 client.user.setActivity(`Starting up...`);
 sleep(10000 * 1).then(() => console.log("Done!"))
  
- client.user.setActivity('+help', { type: 'WATCHING' });
+ client.user.setActivity('Boggy Beta', { type: 'WATCHING' });
 
 });
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
-    client.user.setActivity('+help', { type: 'WATCHING' });
+ client.user.setActivity('Boggy Beta', { type: 'WATCHING' });
 
 });
 
 client.on("guildDelete", guild => {
   // this event triggers when the bot is removed from a guild.
-     client.user.setActivity('+help', { type: 'WATCHING' });
+ client.user.setActivity('Boggy Beta', { type: 'WATCHING' });
 });
 
 
