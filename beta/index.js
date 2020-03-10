@@ -340,4 +340,4 @@ client.on("message", async message => {
   }
 });
 console.log("Logging in...")
-client.login(process.env.token);
+//client.login(process.env.betatoken); - Dont have a token for beta yet, so bot is basically useless lol
