@@ -62,27 +62,7 @@ client.on("message", async message => {
   
   // Also good practice to ignore any message that does not start with our prefix, 
   // which is set in the configuration file.
-	if (command === "rps") {
-		// rock: 0, paper: 1, scissors: 2
-		let choices = ["rock", "paper", "scissors"];
-		let myChoice = Math.floor(Math.random()*3);
-		let theirChoice;
-
-		if (details == "rock" || details == "r") theirChoice = 0;
-		if (details == "paper" || details == "p") theirChoice = 1;
-		if (details == "scissors" || details == "scissor" || details == "s") theirChoice = 2;
-
-		if (theirChoice == undefined) {
-			msg.reply(`I couldn't understand that.\nThe syntax for this command is rps [rock,paper,scissors``);
-			return;
-		}
-
-		let response = "It's a tie.";
-		if (myChoice == theirChoice + 1 || myChoice + 2 == theirChoice) response = "I win!";
-		if (theirChoice == myChoice + 1 || theirChoice + 2 == myChoice) response = "You win!";
-
-		msg.reply(`I chose ${choices[myChoice]}. ${response}`);
-	}
+	
     if (command === "setup") {
        if(message.member.roles.some(r=>["Staff"].includes(r.name)) )
       return message.channel.send("Roles are already setup!");
