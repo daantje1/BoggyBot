@@ -142,7 +142,7 @@ client.on("message", async message => {
   
   if (command === "premium") {
     
-  return message.channel.send("Coming Soon");
+  return message.channel.send("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GXXJ6AKKCAM4G&source=url after you donated please join our discord and contact us to claim your prize! Invite: https://discord.gg/u4FbsC3 ");
   
   }
    if (command === "meme") {
