@@ -1,7 +1,6 @@
 // Load up the discord.js library
-require('http').createServer().listen(3000)
 
-console.log("Loading Libary")
+console.log("(BETA)Loading Libary")
 const Discord = require("discord.js");
 const randomPuppy = require("random-puppy");
 // This is your client. Some people call it `bot`, some people call it `self`, 
@@ -16,7 +15,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
   // This event will run if the bot starts, and logs in, successfully.
-  console.log("Logged in!")
+  console.log("(BETA)Logged in!")
   // Example of changing the bot's playing game to something useful. `client.user` is what the
   // docs refer to as the "ClientUser".
   sleep = function(time) {
@@ -26,9 +25,9 @@ client.on("ready", () => {
   return new Promise((r, _) => r()
 )
 }
-console.log("Setting Activity...")
+console.log("(BETA)Setting Activity...")
 client.user.setActivity(`Starting up...`);
-sleep(10000 * 1).then(() => console.log("Done!"))
+sleep(10000 * 1).then(() => console.log("(BETA)Done!"))
  
  client.user.setActivity('Boggy Beta', { type: 'WATCHING' });
 
@@ -339,5 +338,5 @@ client.on("message", async message => {
       .catch(error => message.reply(`Error: ${error}`));
   }
 });
-console.log("Logging in...")
+console.log("(beta)Logging in...")
 client.login(process.env.betatoken);
