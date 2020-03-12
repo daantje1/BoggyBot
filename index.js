@@ -28,7 +28,7 @@ client.on("ready", () => {
 }
 console.log("Setting Activity...")
 client.user.setActivity(`Starting up...`);
-sleep(10000 * 1).then(() => console.log("Done!"))
+console.log("Done!")
  
  client.user.setActivity('+help', { type: 'WATCHING' });
 
