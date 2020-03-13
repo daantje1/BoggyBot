@@ -1,1 +1,2 @@
-worker node index.js
+normalprocess node index.js
+betaprocess cd beta && node index.js
