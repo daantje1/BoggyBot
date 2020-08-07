@@ -30,7 +30,7 @@ console.log("Setting Activity...")
 client.user.setActivity(`Starting up...`);
 console.log("Done!")
  
- client.user.setActivity('+help', { type: 'WATCHING' });
+ client.user.setActivity('BoggyTV - +help', { type: 'WATCHING' });
 
 });
 
